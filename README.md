@@ -99,8 +99,21 @@ To reboot:
 ```sh
 $ sudo shutdown -r now
 ```
-
 For more options please see `man shutdown`.
+
+
+### `ps`
+Used to show currently running processes.
+```sh
+$ ps
+  PID TTY          TIME CMD
+ 1573 pts/1    00:00:00 ps
+32017 pts/1    00:00:00 bash
+```
+
+
+
+
 
 ## Paths
 >***A unique location to a file or folder.  Paths in Linux start off at the root ```/``` of the filesystem.***
@@ -149,7 +162,7 @@ For example, suppose we wanted to take the output of the `ps` command and place 
 $ ps > psdata.txt
 ```
 
-We many also want to redirect stdin to come from a file rather then the keyboard.  We can do that as well.  Suppose we have a text file, `text.txt`, that contains the letters a - g randomly ordered with a single character on each line.  To sort that file we can use the sort command.
+We may also want to redirect stdin to come from a file rather then the keyboard.  We can do that as well.  Suppose we have a text file, `text.txt`, that contains the letters a - g randomly ordered with a single character on each line.  To sort that file we can use the sort command.
 ```sh
 $ sort < text.txt
 a
